@@ -58,6 +58,7 @@ hr {
 }
 
 /* top-blogs style */
+
 .blog .thambnils img {
     width: 177px;
     height: 117px;
@@ -93,6 +94,19 @@ hr {
 }
 
 /* courses style */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+}
+
+.course {
+    background-color: white;
+    box-shadow: 5px 5px 5px ghostwhite;
+}
+
+
+
 .course .course-banner img {
     width: 224px;
     height: 104px;
@@ -104,6 +118,9 @@ hr {
 
 .course-info {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
 .fa-star.filed {
@@ -113,3 +130,13 @@ hr {
 .fa-star.empty {
     color: #aeaeae;
 }
+
+.course-duration {
+    background-color: orange;
+    color: red;
+    border-radius: 10px;
+    padding: 10px 20px;
+
+}
+
+/* .course-duration  */
