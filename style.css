@@ -139,4 +139,36 @@ hr {
 
 }
 
-/* .course-duration  */
+/* Media query*/
+/*------------------------
+ Mobile-device ------------*/
+@media screen and (max-width:668px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player,
+    .blog {
+        flex-direction: column;
+    }
+}
+
+/*-----------------------
+ Tablet Device----------*/
+@media screen and (min-width:668px) and (max-width:992px) {
+    .container {
+        width: 100%;
+    }
+
+    .players,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
